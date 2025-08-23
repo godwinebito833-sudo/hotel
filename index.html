@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sunrise Hotel • Luxury & Comfort</title>
+  <meta name="description" content="Sunrise Hotel – luxury rooms, fine dining, spa & events. Book your stay with real‑time price estimates and instant WhatsApp confirmation." />
+  <link rel="icon" href="/favicon.ico" />
+  <meta property="og:title" content="Sunrise Hotel • Luxury & Comfort" />
+  <meta property="og:description" content="Book deluxe rooms & suites. Restaurant, spa, pool, conference halls. Best rates guaranteed." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/hot.jpg" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container nav" role="navigation" aria-label="Main Navigation">
+      <a class="brand" href="#home" aria-label="Sunrise Hotel home">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Sunrise Hotel</span>
+      </a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#dining">Dining</a>
+        <a href="#spa">Spa</a>
+        <a href="#events">Events</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#location">Location</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <button class="cta" onclick="openBooking()">Book Now</button>
+
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero" role="banner" aria-label="Welcome">
+    <div class="content">
+      <h1>Luxury & Comfort in the Heart of the City</h1>
+      <p>Modern rooms, refined dining, relaxing spa, and versatile event spaces. Best rate guaranteed when you book direct.</p>
+      <div class="badges">
+        <span class="badge">Free Breakfast</span>
+        <span class="badge">High‑Speed Wi‑Fi</span>
+        <span class="badge">24/7 Support</span>
+        <span class="badge">Flexible Cancellation</span>
+      </div>
+      <div style="margin-top:22px">
+        <button class="cta" onclick="openBooking()">Check Availability</button>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- About -->
+    <section id="about" class="container">
+      <h2 class="section-title">About Sunrise Hotel</h2>
+      <p class="section-sub">Your home away from home. Our mission is to deliver warm hospitality with thoughtful details: plush bedding, sparkling clean spaces, and a team that knows your name.</p>
+      <div class="grid cols-3">
+        <div class="card">
+          <img src="images/lobby.webp" alt="Lobby with warm lighting" />
+          <div class="pad">
+            <h3>Central & Connected</h3>
+            <p>Minutes from business districts, shopping, and attractions. Airport transfers available on request.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/conc.jpg" alt="Concierge desk" />
+          <div class="pad">
+            <h3>Service that Shines</h3>
+            <p>24/7 concierge, same‑day laundry, and multilingual staff to make every stay seamless.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/loungers.jpg" alt="Poolside loungers" />
+          <div class="pad">
+            <h3>Relax & Renew</h3>
+            <p>Rooftop pool, full‑service spa, and a fitness studio with city views.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms -->
+    <section id="rooms" class="container">
+      <h2 class="section-title">Rooms & Suites</h2>
+      <p class="section-sub">Choose the perfect space for your stay. Prices shown are base nightly rates; final totals are calculated in the booking form.</p>
+      <a href="rooms.html" class="btn view-rooms-btn">View All Rooms</a>
+      <div class="grid cols-3" aria-label="Room categories">
+        <article class="card"  aria-labelledby="r1-title">
+          <div class="room-slider">
+            <div class="slides">
+               <img src="images/deluxe.jpg" alt="Deluxe Room - View 1">
+               <img src="images/lobby2.jpg" alt="Deluxe Room - View 2">
+               <img src="images/conc.jpg" alt="Deluxe Room - View 3">
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+          <div class="pad">
+            <div class="pill">Most Popular</div>
+            <h3 id="r1-title">Deluxe Room</h3>
+            <p class="muted">28 m² • City view • King bed</p>
+            <div class="amenities"><span>Wi‑Fi</span><span>Smart TV</span><span>Rain Shower</span><span>Mini‑bar</span></div>
+            <p><span class="price" data-price="$114">$114</span> / night</p>
+            <button class="cta" onclick="openBooking()">Book Now</button>
+          </div>
+        </article>
+        <article class="card" aria-labelledby="r2-title">
+          <div class="room-slider">
+            <div class="slides">
+               <img src="images/deluxe.jpg" alt="Deluxe Room - View 1">
+               <img src="images/lobby2.jpg" alt="Deluxe Room - View 2">
+               <img src="images/conc.jpg" alt="Deluxe Room - View 3">
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+          <div class="pad">
+            <h3 id="r2-title">Executive Suite</h3>
+            <p class="muted">45 m² • Lounge • King bed</p>
+            <div class="amenities"><span>Wi‑Fi</span><span>Kitchenette</span><span>Bathtub</span><span>Work Desk</span></div>
+            <p><span class="price" data-price="145000">₦145,000</span> / night</p>
+            <button class="cta" onclick="openBooking()">Book Now</button>
+
+          </div>
+        </article>
+        <article class="card" aria-labelledby="r3-title">
+           <div class="room-slider">
+            <div class="slides">
+               <img src="images/deluxe.jpg" alt="Deluxe Room - View 1">
+               <img src="images/lobby2.jpg" alt="Deluxe Room - View 2">
+               <img src="images/conc.jpg" alt="Deluxe Room - View 3">
+          </div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+          <div class="pad">
+            <h3 id="r3-title">Family Room</h3>
+            <p class="muted">35 m² • 2 Queen beds • Sleeps 4</p>
+            <div class="amenities"><span>Wi‑Fi</span><span>Crib on Request</span><span>Microwave</span><span>Closet</span></div>
+            <p><span class="price" data-price="110000">₦110,000</span> / night</p>
+            <button class="cta" onclick="openBooking()">Book Now</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Booking --
+    <section id="booking" class="booking">
+      <div class="container">
+        <h2 class="section-title">Book Your Stay</h2>
+        <p class="section-sub">Instant price estimate, live validation, and one‑tap WhatsApp or email request.
+          <br><small class="muted">(Sample only – connect to your PMS later. Data is not stored on a server.)</small></p>
+
+        <form id="bookingForm" class="booking-form" aria-label="Booking form">
+          <div class="field">
+            <label for="roomType">Room Type</label>
+            <select id="roomType" required>
+              <option value="Deluxe King" data-rate="85000">Deluxe King — ₦85,000</option>
+              <option value="Executive Suite" data-rate="145000">Executive Suite — ₦145,000</option>
+              <option value="Family Room" data-rate="110000">Family Room — ₦110,000</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="checkIn">Check‑in</label>
+            <input type="date" id="checkIn" required />
+          </div>
+          <div class="field">
+            <label for="checkOut">Check‑out</label>
+            <input type="date" id="checkOut" required />
+          </div>
+          <div class="field">
+            <label for="adults">Adults</label>
+            <select id="adults" required>
+              <option>1</option><option selected>2</option><option>3</option><option>4</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="children">Children</label>
+            <select id="children">
+              <option selected>0</option><option>1</option><option>2</option><option>3</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="promo">Promo Code (optional)</label>
+            <input type="text" id="promo" placeholder="e.g. DIRECT5" />
+          </div>
+
+          <div class="field" style="grid-column:1/-1">
+            <label>Add‑ons</label>
+            <div class="inline">
+              <input type="checkbox" id="breakfast" value="6000" />
+              <label for="breakfast">Breakfast (₦6,000 / person / night)</label>
+            </div>
+            <div class="inline">
+              <input type="checkbox" id="airport" value="18000" />
+              <label for="airport">Airport Transfer (₦18,000 one way)</label>
+            </div>
+          </div>
+
+          <div class="inline" style="grid-column:1/-1">
+            <input id="agree" type="checkbox" required />
+            <label for="agree">I agree to the <a href="#policies">booking policies</a>.</label>
+          </div>
+
+          <button type="submit" class="cta" style="grid-column:1/-1">Get Total & Send Request</button>
+        </form>
+
+        <div class="summary" id="summary" aria-live="polite" hidden></div>
+      </div>
+    </section>
+  -->
+
+    <!-- Amenities -->
+    <section id="amenities" class="container">
+      <h2 class="section-title">Amenities</h2>
+      <p class="section-sub">Everything you need for a comfortable, productive, and memorable stay.</p>
+      <div class="icon-list">
+        <div class="icon-item"><div>📶</div><div><strong>Fast Wi‑Fi</strong><br/><span class="muted">Up to 200 Mbps throughout the hotel.</span></div></div>
+        <div class="icon-item"><div>🥐</div><div><strong>Breakfast Buffet</strong><br/><span class="muted">Complimentary for direct bookings.</span></div></div>
+        <div class="icon-item"><div>🏊</div><div><strong>Rooftop Pool</strong><br/><span class="muted">Open 7am–9pm daily.</span></div></div>
+        <div class="icon-item"><div>🧖</div><div><strong>Spa & Sauna</strong><br/><span class="muted">Massages, facials, body treatments.</span></div></div>
+        <div class="icon-item"><div>🏋️</div><div><strong>Fitness Studio</strong><br/><span class="muted">Modern equipment & city views.</span></div></div>
+        <div class="icon-item"><div>🅿️</div><div><strong>Secure Parking</strong><br/><span class="muted">24/7 CCTV & access control.</span></div></div>
+      </div>
+    </section>
+
+    <!-- Dining -->
+    <section id="dining" class="container">
+      <h2 class="section-title">Dining</h2>
+      <p class="section-sub">From sunrise espresso to late‑night cocktails. Room service runs 24/7.</p>
+      <div class="grid cols-3">
+        <div class="card"><img src="images/all day.jpg" alt="All‑day restaurant" /><div class="pad"><h3>All‑Day Restaurant</h3><p>Seasonal menus blending local produce and global flavors.</p></div></div>
+        <div class="card"><img src="images/lobby.jpg" alt="Lobby cafe" /><div class="pad"><h3>Lobby Café</h3><p>Specialty coffee, fresh pastries, and grab‑and‑go bites.</p></div></div>
+        <div class="card"><img src="images/sky bar.jpg" alt="Sky bar" /><div class="pad"><h3>Sky Bar</h3><p>Golden‑hour cocktails with panoramic views.</p></div></div>
+      </div>
+    </section>
+
+    <!-- Spa -->
+    <section id="spa" class="container">
+      <h2 class="section-title">Spa & Wellness</h2>
+      <p class="section-sub">De‑stress with curated rituals and experienced therapists.</p>
+      <div class="grid cols-3">
+        <div class="card"><img src="images/massage.jpg" alt="Massage" /><div class="pad"><h3>Signature Massage</h3><p>60/90‑minute sessions tailored to you.</p></div></div>
+        <div class="card"><img src="images/facial.jpg" alt="Facial" /><div class="pad"><h3>Glow Facial</h3><p>Revitalizing treatment for instant radiance.</p></div></div>
+        <div class="card"><img src="images/sauna.jpg" alt="Sauna" /><div class="pad"><h3>Sauna & Steam</h3><p>Complimentary for all in‑house guests.</p></div></div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events" class="container">
+      <h2 class="section-title">Meetings & Events</h2>
+      <p class="section-sub">Versatile spaces for board meetings, workshops, and weddings. On‑site AV and catering.</p>
+      <div class="grid cols-3">
+        <div class="card"><img src="images/boardroom.jpeg" alt="Boardroom" /><div class="pad"><h3>Boardroom</h3><p>Up to 14 guests, 86" display, video conferencing.</p></div></div>
+        <div class="card"><img src="images/ballroom.jpg" alt="Ballroom" /><div class="pad"><h3>Ballroom</h3><p>Up to 250 guests, divisible, natural light.</p></div></div>
+        <div class="card"><img src="images/workshop.jpg" alt="Workshop room" /><div class="pad"><h3>Workshop Rooms</h3><p>Flexible layouts with whiteboards & breakout spaces.</p></div></div>
+         <div class="card"><img src="images/event.webp" alt="Event Hall" /><div class="pad"><h3>Event Hall</h3><p>Flexible layouts with whiteboards & breakout spaces.</p></div></div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="container">
+      <h2 class="section-title">Gallery</h2>
+      <p class="section-sub">A peek into our spaces. Replace images with your own JPGs.</p>
+      <div class="masonry" aria-label="Photo gallery">
+        <img src="images/hotelexterior.avif" alt="Hotel exterior" />
+        <img src="images/lobby2.jpg" alt="Lobby" />
+        <img src="images/pool.webp" alt="Pool" />
+        <img src="images/restaurant.webp" alt="Restaurant" />
+        <img src="images/suite.jpg" alt="Suite" />
+        <img src="images/conference hall.jpg" alt="Conference hall" />
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container">
+      <h2 class="section-title">Guest Reviews</h2>
+      <p class="section-sub">Real feedback from happy travelers.</p>
+      <div class="testimonials">
+        <div class="quote">“Immaculate rooms and the friendliest staff. Breakfast was a highlight!” — Ada</div>
+        <div class="quote">“Fast Wi‑Fi, comfy bed, and great location for business meetings.” — Chidi</div>
+        <div class="quote">“The spa treatment was heavenly. We’ll be back.” — Ifeoma</div>
+      </div>
+    </section>
+
+    <!-- Location / Map -->
+    <section id="location" class="container">
+      <h2 class="section-title">Find Us</h2>
+      <p class="section-sub">123 Paradise Street, City Center • <a href="tel:+2341234567890">+234 123 456 7890</a></p>
+      <div class="card">
+        <iframe title="Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.737!2d3.3792!3d6.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zNi41MjQ0LCAzLjM3OTI!5e0!3m2!1sen!2sNG!4v0000000000" width="100%" height="380" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- FAQ / Policies -->
+    <section id="faq" class="container">
+      <h2 class="section-title">FAQs & Policies</h2>
+      <p class="section-sub">Key info for an easy stay.</p>
+      <div class="grid">
+        <details open>
+          <summary>What time is check‑in/out?</summary>
+          <p>Check‑in from 2:00 PM • Check‑out by 12:00 PM. Early/late options subject to availability.</p>
+        </details>
+        <details>
+          <summary>Cancellation policy</summary>
+          <p id="policies">Free cancellation until 6:00 PM the day before arrival on flexible rates. Non‑refundable rates are charged at booking.</p>
+        </details>
+        <details>
+          <summary>Children & extra beds</summary>
+          <p>Children under 6 stay free with existing bedding. Cribs available on request.</p>
+        </details>
+        <details>
+          <summary>Payment methods</summary>
+          <p>We accept major cards and bank transfer. A refundable deposit may apply on arrival.</p>
+        </details>
+        <details>
+          <summary>Pets</summary>
+          <p>Service animals are welcome. Other pets by prior arrangement only.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-sub">Need help? Our team replies quickly on WhatsApp and email.</p>
+      <div class="grid cols-3">
+        <div class="card"><div class="pad"><h3>Front Desk</h3><p><a href="tel:+2341234567890">+234 123 456 7890</a></p><p><a href="mailto:reservations@sunrisehotel.com">reservations@sunrisehotel.com</a></p></div></div>
+        <div class="card"><div class="pad"><h3>Sales & Events</h3><p><a href="mailto:events@sunrisehotel.com">events@sunrisehotel.com</a></p><p>Ballroom, meetings, weddings</p></div></div>
+        <div class="card"><div class="pad"><h3>Address</h3><p>123 Paradise Street, City Center</p><p>Open 24/7 • Secure parking</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="color:#fff;gap:12px"><span class="dot"></span><strong>Sunrise Hotel</strong></div>
+        <p style="margin-top:10px">Best rate guaranteed when you book direct. Join our loyalty club for exclusive perks.</p>
+      </div>
+      <div>
+        <h4>Hotel</h4>
+        <p><a href="#rooms">Rooms</a><br><a href="#dining">Dining</a><br><a href="#spa">Spa</a><br><a href="#events">Events</a></p>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <p><a href="#faq">FAQs</a><br><a href="#policies">Booking Policies</a><br><a href="mailto:reservations@sunrisehotel.com">Contact Reservations</a></p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <p><a href="#">Privacy</a><br><a href="#">Terms</a><br><a href="#">Cookie Policy</a></p>
+      </div>
+    </div>
+    <div class="container copyright">© <span id="year"></span> Sunrise Hotel. All rights reserved.</div>
+  </footer>
+
+  <!-- WhatsApp floating button (replace number) -->
+  <a class="whats" id="waBtn" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp Us</a>
+
+  <!-- JSON‑LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Sunrise Hotel",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Paradise Street",
+      "addressLocality": "City Center",
+      "addressCountry": "NG"
+    },
+    "telephone": "+2341234567890",
+    "amenityFeature": [
+      {"@type":"LocationFeatureSpecification","name":"Free Wi‑Fi"},
+      {"@type":"LocationFeatureSpecification","name":"Breakfast"},
+      {"@type":"LocationFeatureSpecification","name":"Pool"},
+      {"@type":"LocationFeatureSpecification","name":"Spa"}
+    ],
+    "url": "https://example.com",
+    "image": ["hero.jpg","room-deluxe.jpg","room-exec.jpg","room-family.jpg"]
+  }
+  </script>
+
+  <script>
+    // Helper: format currency NGN
+    const fmt = n => new Intl.NumberFormat('en-NG', { style: 'currency', currency: 'NGN', maximumFractionDigits: 0 }).format(n);
+
+    // Year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Set min dates for check-in/out
+    const cin = document.getElementById('checkIn');
+    const cout = document.getElementById('checkOut');
+    const today = new Date();
+    const pad = v => String(v).padStart(2,'0');
+    const toInput = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+    cin.min = toInput(today);
+    cin.addEventListener('change', () => {
+      const d = new Date(cin.value);
+      if(isNaN(d)) return;
+      const next = new Date(d); next.setDate(next.getDate()+1);
+      cout.min = toInput(next);
+      if(!cout.value || new Date(cout.value) <= d){
+        cout.value = toInput(next);
+      }
+    });
+
+    // Booking form logic
+    const form = document.getElementById('bookingForm');
+    const summary = document.getElementById('summary');
+
+    const PROMOS = {
+      'DIRECT5': {type:'percent', value:5},
+      'WEEKEND10': {type:'percent', value:10}
+    };
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      // Gather inputs
+      const roomSel = document.getElementById('roomType');
+      const roomType = roomSel.value;
+      const baseRate = Number(roomSel.selectedOptions[0].dataset.rate);
+      const checkIn = new Date(document.getElementById('checkIn').value);
+      const checkOut = new Date(document.getElementById('checkOut').value);
+      const nights = Math.max(1, Math.round((checkOut - checkIn) / (1000*60*60*24)));
+      const adults = Number(document.getElementById('adults').value);
+      const children = Number(document.getElementById('children').value);
+      const promo = (document.getElementById('promo').value || '').trim().toUpperCase();
+      const breakfast = document.getElementById('breakfast').checked;
+      const airport = document.getElementById('airport').checked;
+
+      // Fees & taxes (sample)
+      const taxes = 0.075; // 7.5% VAT sample
+      const svc = 0.05;   // 5% service charge sample
+
+      // Add-ons
+      const breakfastCost = breakfast ? 6000 * (adults + children) * nights : 0;
+      const airportCost = airport ? 18000 : 0;
+
+      let subtotal = baseRate * nights + breakfastCost + airportCost;
+
+      // Promo
+      let promoText = 'None';
+      if (PROMOS[promo]) {
+        const p = PROMOS[promo];
+        const discount = p.type === 'percent' ? subtotal * (p.value/100) : p.value;
+        subtotal -= discount; promoText = `${promo} (−${fmt(discount)})`;
+      }
+
+      const taxAmt = subtotal * taxes;
+      const svcAmt = subtotal * svc;
+      const total = Math.round(subtotal + taxAmt + svcAmt);
+
+      // Render summary
+      summary.hidden = false;
+      summary.innerHTML = `
+        <h3>Reservation Summary</h3>
+        <p><strong>${roomType}</strong> • ${nights} night(s) • ${adults} adult(s)${children?`, ${children} child(ren)`:''}</p>
+        <ul>
+          <li>Base rate: ${fmt(baseRate)} × ${nights} = <strong>${fmt(baseRate*nights)}</strong></li>
+          ${breakfast?`<li>Breakfast: ${fmt(breakfastCost)}</li>`:''}
+          ${airport?`<li>Airport transfer: ${fmt(airportCost)}</li>`:''}
+          <li>Promo: ${promoText}</li>
+          <li>VAT (7.5%): ${fmt(taxAmt)}</li>
+          <li>Service (5%): ${fmt(svcAmt)}</li>
+        </ul>
+        <p style="font-size:20px;margin-top:8px">Total Estimated: <strong>${fmt(total)}</strong></p>
+        <div class="inline" style="margin-top:10px;flex-wrap:wrap;gap:10px">
+          <a class="cta" id="sendWA" href="#" target="_blank" rel="noopener">Send via WhatsApp</a>
+          <a class="cta" id="sendEmail" href="#">Send via Email</a>
+          <button class="cta" onclick="window.print()" type="button">Print</button>
+        </div>
+      `;
+
+      // Compose message
+      const msg = `Sunrise Hotel Booking Request\n\n`+
+        `Room: ${roomType}\n`+
+        `Dates: ${toInput(checkIn)} → ${toInput(checkOut)} (${nights} nights)\n`+
+        `Guests: ${adults} adult(s)${children?`, ${children} child(ren)`:''}\n`+
+        `Breakfast: ${breakfast? 'Yes' : 'No'}\nAirport Transfer: ${airport? 'Yes' : 'No'}\n`+
+        `Promo: ${promo || 'None'}\n`+
+        `Estimated Total: ${fmt(total)}\n\nPlease confirm availability.`;
+
+      const phone = '+2341234567890'.replace(/[^\d+]/g,''); // replace with your WhatsApp number
+      const waURL = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+      const mailto = `mailto:reservations@sunrisehotel.com?subject=${encodeURIComponent('Booking Request – '+roomType)}&body=${encodeURIComponent(msg)}`;
+
+      document.getElementById('sendWA').href = waURL;
+      document.getElementById('sendEmail').href = mailto;
+    });
+
+    // Floating WhatsApp button link
+    const waBtn = document.getElementById('waBtn');
+    waBtn.href = 'https://wa.me/2341234567890?text=' + encodeURIComponent('Hello Sunrise Hotel, I would like to make a booking.');
+  </script>
+
+ <script>
+  const hero = document.querySelector('.hero');
+  const images = ["images/hot.jpg", "images/deluxe.jpg", "images/lobby.webp", "images/loungers.jpg"];
+  let index = 0;
+  let showingBefore = true;
+
+  function changeSlide() {
+    index = (index + 1) % images.length;
+
+    if (showingBefore) {
+      hero.style.setProperty("--after-bg", `url(${images[index]})`);
+      hero.classList.add("fade-to-after");
+    } else {
+      hero.style.setProperty("--before-bg", `url(${images[index]})`);
+      hero.classList.remove("fade-to-after");
+    }
+
+    showingBefore = !showingBefore;
+  }
+
+  setInterval(changeSlide, 2000); // change every 2s
+</script>
+<!-- Booking Popup -->
+<div id="booking-popup" class="booking-popup">
+  <div class="booking-popup-content">
+    <span class="close-btn" onclick="closeBooking()">&times;</span>
+    <h2>Book Your Stay</h2>
+    <form>
+      <label for="checkin">Check-in Date:</label>
+      <input type="date" id="checkin" required>
+
+      <label for="checkout">Check-out Date:</label>
+      <input type="date" id="checkout" required>
+
+      <label for="room">Room Type:</label>
+      <select id="room">
+        <option value="deluxe">Deluxe Room - $120/night</option>
+        <option value="executive">Executive Room - $200/night</option>
+        <option value="family">Family Room - $300/night</option>
+      </select>
+
+      <label for="guests">Guests:</label>
+      <input type="number" id="guests" min="1" value="1">
+
+      <button type="submit" class="book-btn">Confirm Booking</button>
+    </form>
+  </div>
+</div>
+
+<script>
+function openBooking() {
+  document.getElementById("booking-popup").style.display = "flex";
+}
+
+function closeBooking() {
+  document.getElementById("booking-popup").style.display = "none";
+}
+
+// Close if clicked outside
+window.onclick = function(event) {
+  let popup = document.getElementById("booking-popup");
+  if (event.target === popup) {
+    closeBooking();
+  }
+}
+</script>
+<script>
+document.querySelectorAll('.room-slider').forEach(slider => {
+  const slides = slider.querySelector('.slides');
+  const images = slides.querySelectorAll('img');
+  let index = 0;
+
+  function showSlide(i) {
+    index = (i + images.length) % images.length;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  slider.querySelector('.prev').addEventListener('click', () => showSlide(index - 1));
+  slider.querySelector('.next').addEventListener('click', () => showSlide(index + 1));
+
+  // Optional: autoplay per room
+  setInterval(() => showSlide(index + 1), 4000);
+});
+</script>
+
+
+</body>
+</html>
