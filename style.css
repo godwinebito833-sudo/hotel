@@ -73,7 +73,26 @@
     .badges{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:14px}
     .badge{background:#ffffffd9;color:#111;padding:8px 12px;border-radius:999px;font-weight:700}
 
-    /* hide hamburger on desktop */
+   .container.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-area {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* nav links inline on desktop */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* hide hamburger on desktop */
 .menu-toggle {
   display: none;
   font-size: 2rem;
@@ -82,10 +101,10 @@
   cursor: pointer;
 }
 
-/* mobile view */
+/* Mobile view */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* hide by default */
+    display: none; /* hidden by default */
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -100,8 +119,10 @@
   }
 
   .menu-toggle {
-    display: block; /* show hamburger on mobile */
+    display: block; /* show hamburger */
   }
+}
+
 
 
     /* Sections */
