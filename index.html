@@ -19,20 +19,21 @@
       <a class="brand" href="#home" aria-label="Sunrise Hotel home">
         <span class="dot" aria-hidden="true"></span>
         <span>Sunrise Hotel</span>
+        <!-- Hamburger button (visible only on mobile) -->
+    <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
       </a>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#rooms">Rooms</a>
-        <a href="#amenities">Amenities</a>
-        <a href="#dining">Dining</a>
-        <a href="#spa">Spa</a>
-        <a href="#events">Events</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#location">Location</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-        <button class="cta" onclick="openBooking()">Book Now</button>
-
+       <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#dining">Dining</a>
+      <a href="#spa">Spa</a>
+      <a href="#events">Events</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#location">Location</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <button class="cta" onclick="openBooking()">Book Now</button>
       </nav>
     </div>
   </header>
@@ -292,7 +293,7 @@
       <h2 class="section-title">Find Us</h2>
       <p class="section-sub">123 Paradise Street, City Center • <a href="tel:+2341234567890">+234 123 456 7890</a></p>
       <div class="card">
-        <iframe title="Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.737!2d3.3792!3d6.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zNi41MjQ0LCAzLjM3OTI!5e0!3m2!1sen!2sNG!4v0000000000" width="100%" height="380" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7950.522768311456!2d6.975764!3d4.895851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d1846ed90b83%3A0xaaad089bd0ee04ff!2sPortland%20Resorts%20Hotel%20Port%20Harcourt!5e0!3m2!1sen!2sus!4v1756220033673!5m2!1sen!2sus" width="100" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 
@@ -581,8 +582,12 @@ document.querySelectorAll('.room-slider').forEach(slider => {
   // Optional: autoplay per room
   setInterval(() => showSlide(index + 1), 4000);
 });
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
 </script>
-
-
 </body>
 </html>
