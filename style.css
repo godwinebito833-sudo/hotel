@@ -24,7 +24,7 @@
     .cta{display:inline-flex;align-items:center;gap:8px;background:var(--brand);color:#fff;padding:10px 16px;border-radius:999px;font-weight:700;border:none;cursor:pointer;box-shadow:var(--shadow)}
     .cta:hover{filter:brightness(.95)}
 
-    .hero{position:relative;min-height:86vh;display:grid;place-items:center;text-align:center;color:#fff;overflow:hidden}
+    .hero{position:relative;min-height:86vh;font-style: italic; display:grid;place-items:center;text-align:center;color:#fff;overflow:hidden}
 
     .container.nav {
   display: flex;
@@ -72,8 +72,8 @@
     .hero p{font-size:clamp(16px,2.4vw,20px);opacity:.95;margin:0 0 24px}
     .badges{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:14px}
     .badge{background:#ffffffd9;color:#111;padding:8px 12px;border-radius:999px;font-weight:700}
-
-   .container.nav {
+/* Header layout */
+.container.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,8 +81,9 @@
 
 .menu-area {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column; /* stack hamburger, nav, button vertically */
+  align-items: flex-end;
+  gap: 0.5rem;
 }
 
 /* nav links inline on desktop */
@@ -90,6 +91,13 @@
   display: flex;
   gap: 1.5rem;
   align-items: center;
+}
+
+/* Book Now button smaller */
+.book-now {
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
 }
 
 /* hide hamburger on desktop */
@@ -104,7 +112,7 @@
 /* Mobile view */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* hidden by default */
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -112,17 +120,27 @@
     background: #fff;
     padding: 1rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 100;
   }
 
   .nav-links.show {
-    display: flex; /* show when toggled */
+    display: flex;
   }
 
   .menu-toggle {
-    display: block; /* show hamburger */
+    display: block;
+  }
+
+  /* place Book Now below dropdown */
+  .book-now {
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 101;
   }
 }
 
+
+  
 
 
     /* Sections */
